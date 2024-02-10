@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wedding Logistics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+.mySlides {display:none;}
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("header.jpeg")}
+.bgimg2 {background-image: url("pic1.jpeg")}
+</style>
+</head>
+<body>
+
+<!-- Navigation (Stays on Top) -->
+<div class="w3-top w3-bar w3-black">
+  <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+  <a href="logistics.html" class="w3-bar-item w3-button">Wedding Day Logistics</a>
+  <a href="gallery.html" class="w3-bar-item w3-button">Photo Gallery</a>
+  <a href="https://www.amazon.com/wedding/registry/37UYRWUY719NB " class="w3-bar-item w3-button">Amazon Registry</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+  
+<h1> <p> </p></h1>
+<h2 class="w3-center">Engagement Photos</h2>
+
+<div class="w3-content w3-display-container w3-center"> 
+  <img class="mySlides" src="gallery/ep1.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep2.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep3.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep4.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep5.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep6.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep7.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep8.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep9.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep10.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep11.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep12.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep13.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep14.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+
+  <button class="w3-button" onclick="plusDivs(-1)">&#10094; Prev</button>
+  <button class="w3-button" onclick="plusDivs(1)">Next &#10095;</button>
+</div>
+
+
+<!-- Add some white space-->
+<div>
+  <p>    </p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+<p> Website designed by Jake Anderson</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

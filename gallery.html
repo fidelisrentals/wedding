@@ -8,20 +8,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <style>
     .mySlides {
-      height: 500px; /* Set height */
-      width: auto; /* autofix aspect ratio */
-      margin-left:auto; 
-      margin-right:auto;
-    }
-
-    @media only screen and (max-width: 600px) {
-      /* Adjust styles for screens wider than 600px */
-      .mySlides {
-        height: 250px; /* Set height */
-        width: auto; /* autofix aspect ratio */
-        margin-left:auto; 
-        margin-right:auto;
-      }
+      max-width: 100%; /* Set maximum width to prevent images from overflowing container */
+      max-height: 500px; /* Set maximum height */
+      width: auto; /* Ensure aspect ratio is maintained */
+      display: block; /* Make images behave like block elements */
+      margin: auto;
     }
     body,h1,h2{font-family: "Raleway", sans-serif}
     body, html {height: 100%}
@@ -49,27 +40,27 @@
 <h1> <p> </p></h1>
 <h2 class="w3-center">Engagement Photos</h2>
 
-<div class="w3-content w3-display-container w3-center"> 
-  <img class="mySlides" src="gallery/ep1.jpeg">
-  <img class="mySlides" src="gallery/ep2.jpeg">
-  <img class="mySlides" src="gallery/ep3.jpeg">
-  <img class="mySlides" src="gallery/ep4.jpeg">
-  <img class="mySlides" src="gallery/ep5.jpeg">
-  <img class="mySlides" src="gallery/ep6.jpeg">
-  <img class="mySlides" src="gallery/ep7.jpeg">
-  <img class="mySlides" src="gallery/ep8.jpeg">
-  <img class="mySlides" src="gallery/ep9.JPG">
-  <img class="mySlides" src="gallery/ep10.JPG">
-  <img class="mySlides" src="gallery/ep11.JPG">
-  <img class="mySlides" src="gallery/ep12.JPG">
-  <img class="mySlides" src="gallery/ep13.JPG">
-  <img class="mySlides" src="gallery/ep14.JPG">
+<div class="w3-container w3-content w3-display-container" style="height: 500px; display: flex; justify-content: center; align-items: center;">
+    <img class="mySlides" src="gallery/ep1.jpeg">
+    <img class="mySlides" src="gallery/ep2.jpeg">
+    <img class="mySlides" src="gallery/ep3.jpeg">
+    <img class="mySlides" src="gallery/ep4.jpeg">
+    <img class="mySlides" src="gallery/ep5.jpeg">
+    <img class="mySlides" src="gallery/ep6.jpeg">
+    <img class="mySlides" src="gallery/ep7.jpeg">
+    <img class="mySlides" src="gallery/ep8.jpeg">
+    <img class="mySlides" src="gallery/ep9.JPG">
+    <img class="mySlides" src="gallery/ep10.JPG">
+    <img class="mySlides" src="gallery/ep11.JPG">
+    <img class="mySlides" src="gallery/ep12.JPG">
+    <img class="mySlides" src="gallery/ep13.JPG">
+    <img class="mySlides" src="gallery/ep14.JPG">
+</div>
 
+<div class="w3-center">
   <button class="w3-button" onclick="plusDivs(-1)">&#10094; Prev</button>
   <button class="w3-button" onclick="plusDivs(1)">Next &#10095;</button>
 </div>
-
-
 <!-- Add some white space-->
 <div>
   <p>    </p>

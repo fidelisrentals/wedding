@@ -6,19 +6,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-.mySlides {display:none;}
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-p {line-height: 2}
-.bgimg, .bgimg2 {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-.bgimg {background-image: url("header.jpeg")}
-.bgimg2 {background-image: url("pic1.jpeg")}
-</style>
+  <style>
+    .mySlides {
+      height: 500px; /* Set height */
+      width: auto; /* autofix aspect ratio */
+      margin-left:auto; 
+      margin-right:auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Adjust styles for screens wider than 600px */
+      .mySlides {
+        height: 250px; /* Set height */
+        width: auto; /* autofix aspect ratio */
+        margin-left:auto; 
+        margin-right:auto;
+      }
+    }
+    body,h1,h2{font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    p {line-height: 2}
+    .bgimg, .bgimg2 {
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    .bgimg {background-image: url("header.jpeg")}
+    .bgimg2 {background-image: url("pic1.jpeg")}
+  </style>
 </head>
 <body>
 
@@ -35,20 +50,20 @@ p {line-height: 2}
 <h2 class="w3-center">Engagement Photos</h2>
 
 <div class="w3-content w3-display-container w3-center"> 
-  <img class="mySlides" src="gallery/ep1.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep2.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep3.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep4.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep5.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep6.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep7.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep8.jpeg" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep9.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep10.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep11.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep12.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep13.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
-  <img class="mySlides" src="gallery/ep14.JPG" style="height:500px; margin-left:auto; margin-right:auto;">
+  <img class="mySlides" src="gallery/ep1.jpeg">
+  <img class="mySlides" src="gallery/ep2.jpeg">
+  <img class="mySlides" src="gallery/ep3.jpeg">
+  <img class="mySlides" src="gallery/ep4.jpeg">
+  <img class="mySlides" src="gallery/ep5.jpeg">
+  <img class="mySlides" src="gallery/ep6.jpeg">
+  <img class="mySlides" src="gallery/ep7.jpeg">
+  <img class="mySlides" src="gallery/ep8.jpeg">
+  <img class="mySlides" src="gallery/ep9.JPG">
+  <img class="mySlides" src="gallery/ep10.JPG">
+  <img class="mySlides" src="gallery/ep11.JPG">
+  <img class="mySlides" src="gallery/ep12.JPG">
+  <img class="mySlides" src="gallery/ep13.JPG">
+  <img class="mySlides" src="gallery/ep14.JPG">
 
   <button class="w3-button" onclick="plusDivs(-1)">&#10094; Prev</button>
   <button class="w3-button" onclick="plusDivs(1)">Next &#10095;</button>
